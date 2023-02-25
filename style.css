@@ -1,0 +1,353 @@
+/* Elegir bg del encabezado */
+.bg_header{
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/bg_header.jpg");
+    height: 100vh;
+}
+
+li a{
+    padding-top: 0px;
+    
+    border-radius: 50px;
+    
+}
+li a:hover{
+    background-color: #af27aaa5;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding-top: 1px;
+}
+
+.div_center{
+    
+    width: 100%;
+}
+
+.bg_vidrio{
+    
+    height: 125px;
+ 
+    background-color: rgba(255, 255, 255, .25);  
+    backdrop-filter: blur(1px);
+}
+
+
+
+.neon {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #E3C4FF;
+    
+    font-size: 10vh;
+}
+@keyframes neonAnim {
+from {
+    text-shadow:
+      0 0 30px rgba(250, 196, 255, .7),
+      0 0 60px rgba(227, 196, 255, .7),
+      0 0 120px rgba(227, 196, 255, .7);
+  }
+  to {
+    text-shadow:
+      0 0 25px rgba(227, 196, 255, .7),
+      0 0 40px rgba(227, 196, 255, .7),
+      0 0 80px rgba(227, 196, 255, .7);
+  }
+}
+
+.neon2 {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #d8c6e8;
+    font-size: 4vh;
+    font-style: italic;
+    margin-left: 2%;
+}
+@keyframes neonAnim {
+from {
+    text-shadow:
+      0 0 30px rgba(250, 196, 255, .7),
+      0 0 60px rgba(227, 196, 255, .7),
+      0 0 120px rgba(227, 196, 255, .7);
+  }
+  to {
+    text-shadow:
+      0 0 25px rgba(227, 196, 255, .7),
+      0 0 40px rgba(227, 196, 255, .7),
+      0 0 80px rgba(227, 196, 255, .7);
+  }
+}
+
+.neon_1 {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #403c44;
+    margin-left: 20px;
+    font-size: 7vh;
+}
+@keyframes neonAnim {
+from {
+    text-shadow:
+      0 0 30px rgba(250, 196, 255, .7),
+      0 0 60px rgba(227, 196, 255, .7),
+      0 0 120px rgba(227, 196, 255, .7);
+  }
+  to {
+    text-shadow:
+      0 0 25px rgba(227, 196, 255, .7),
+      0 0 40px rgba(227, 196, 255, .7),
+      0 0 80px rgba(227, 196, 255, .7);
+  }
+}
+
+.neon2_1 {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #3a393b;
+    font-size: 3vh;
+    font-style: italic;
+    margin-left:  6%;
+}
+@keyframes neonAnim {
+from {
+    text-shadow:
+      0 0 30px rgba(250, 196, 255, .7),
+      0 0 60px rgba(227, 196, 255, .7),
+      0 0 120px rgba(227, 196, 255, .7);
+  }
+  to {
+    text-shadow:
+      0 0 25px rgba(227, 196, 255, .7),
+      0 0 40px rgba(227, 196, 255, .7),
+      0 0 80px rgba(227, 196, 255, .7);
+  }
+}
+
+
+
+.bg_vidrio2{
+    
+    height: 100%;
+    background-color: rgba(243, 238, 238, 0.185);  
+    backdrop-filter: blur(8px);
+}
+
+/*BoDy*/
+.bg_body{
+    background-color: #1a1a1a;}
+
+/* TARJETA*/
+.card {
+    width: 250px;
+    height: 320px;
+    background-image: linear-gradient(163deg, #E4B7E3 0%, #9569B1 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    border-radius:20px;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(.97);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px #D8B4CA;
+   }
+
+   /* boton comprar */
+   .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    
+  }
+  
+  .button::after {
+    bottom: 0;
+    
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ab6490;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+  /* footer*/
+  .icon_fix:hover{
+    filter: invert(100%);
+    transition: all.2s ease;
+  }
+  /*fixed*/
+  .icon_fix{
+    width: 30px;
+  }
+
+  .text_fix{
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+
+/* loader*/
+.circulo{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-color: #c397df9a;
+    position: absolute;
+    animation: mover 12s  infinite alternate-reverse;
+    z-index: 0;
+}
+
+.cuadrado{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(83, 70, 201, 0.61);
+    animation: mover2 5s ease infinite alternate-reverse;
+
+}
+
+@keyframes mover {
+    0% {
+      transform: translateX(100);
+      transform: translateY(800);
+    }
+    50%{
+        transform: translateX(1200px);
+    }
+    75%{
+        transform: translateX(1300px);
+        transform: translatey(100px);
+    }
+    100% {
+      
+      transform: translateY(-100px);
+      
+    }
+  }
+
+  @keyframes mover2 {
+	0% {
+        transform: translate(100px, 300px) rotate(0deg);
+    }
+    50% {
+        transform: translate(50px, 100px) rotate(180deg);
+    }
+    100% {
+        transform: translate(300px, 300px) rotate(360deg);
+    }
+  }
+
+
